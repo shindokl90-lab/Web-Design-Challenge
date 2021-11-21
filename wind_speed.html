@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Analysis Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div  class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Plots
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="max_temperature.html">Max Temperature</a></li>
+                <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-12">
+        <div class="box">
+          <h1 class="title">Wind Speed</h1>
+          <hr>
+          <img src="assets/images/Fig4.png" alt="Wind Speed Graph">
+          <p>The associated graph displays the relationship of wind speed to latitude. As seen from the graph there is not a strong correlation between wind speed and latitude.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-12">
+        <div class="box">
+          <h3 class="title">Visualization Menu</h3>
+          <hr>  
+          <div class="row">
+            <div class="col-6">
+              <a href="max_temperature.html"><img alt="Max Temperature Graph" src="assets/images/Fig1.png" class="img-fluid"></a>
+            </div>
+            <div class="col-6">
+              <a href="humidity.html"><img alt="Humidity Graph" src="assets/images/Fig2.png" class="img-fluid"></a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <a href="cloudiness.html"><img alt="Cloudiness Graph" src="assets/images/Fig3.png" class="img-fluid"></a>
+            </div>
+            <div class="col-6">
+              <a href="wind_speed.html"><img alt="Wind Speed Graph" src="assets/images/Fig4.png" class="img-active"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>  
+</body>
+
+</html>
